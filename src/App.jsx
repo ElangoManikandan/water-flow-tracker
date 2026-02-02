@@ -63,14 +63,15 @@ function App() {
       <header className="main-header">
         <div className="brand">
           <Droplets className="brand-icon" size={32} />
-          <h1>புங்கம்பாடி (மேல்) தண்ணீர் கண்காணிப்பு</h1>
+          <h1>புங்கம்பாடி (மேல்) ஊராட்சி - தண்ணீர் கண்காணிப்பு</h1>
         </div>
       </header>
 
       <main className="controls-container">
         {/* மோட்டார்கள் */}
         <section className="ui-card">
-          <div className="card-header"><Power size={20} /> மோட்டார்கள்</div>
+          <div className="card-header">
+            <Power size={20} /> மோட்டார்கள்</div>
           <div className="item-list">
             {[
               { id: 'navamaniMotor', label: 'நவமணி நகர்' },
@@ -123,7 +124,9 @@ function App() {
             ))}
           </div>
         </section>
+        <strong>நீர் ஓட்டம்</strong>
         <div className={`status-display ${isFlowing ? 'active' : ''}`}>
+          
           <Activity className={isFlowing ? 'pulse' : ''} />
           <div className="destination-list">
             {isFlowing ? (
