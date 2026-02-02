@@ -63,18 +63,7 @@ function App() {
       <header className="main-header">
         <div className="brand">
           <Droplets className="brand-icon" size={32} />
-          <h1>புங்கம்பாடி தண்ணீர் கண்காணிப்பு</h1>
-        </div>
-        
-        <div className={`status-display ${isFlowing ? 'active' : ''}`}>
-          <Activity className={isFlowing ? 'pulse' : ''} />
-          <div className="destination-list">
-            {isFlowing ? (
-              activeFlows.map((flow, index) => <div key={index} className="flow-item"><strong>{flow}</strong></div>)
-            ) : (
-              <strong>அனைத்து மோட்டார்கள் நிறுத்தம்</strong>
-            )}
-          </div>
+          <h1>புங்கம்பாடி (மேல்) தண்ணீர் கண்காணிப்பு</h1>
         </div>
       </header>
 
@@ -134,6 +123,16 @@ function App() {
             ))}
           </div>
         </section>
+        <div className={`status-display ${isFlowing ? 'active' : ''}`}>
+          <Activity className={isFlowing ? 'pulse' : ''} />
+          <div className="destination-list">
+            {isFlowing ? (
+              activeFlows.map((flow, index) => <div key={index} className="flow-item"><strong>{flow}</strong></div>)
+            ) : (
+              <strong>அனைத்து மோட்டார்கள் நிறுத்தம்</strong>
+            )}
+          </div>
+        </div>
       </main>
     </div>
   );
