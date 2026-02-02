@@ -111,7 +111,7 @@ function App() {
               { id: 'ganeshValve', label: 'கணேஷ் நகர் ஜங்ஷன்' },
               { 
                 id: 'kalumettupattiValve', 
-                label: 'கலுமெட்டுப்பட்டி ஜங்ஷன்',
+                label: 'கலுமெட்டுப்பட்டி மாற்றி',
                 isBinary: true // Open/Close Label-க்காக
               }
             ].map(v => (
@@ -125,7 +125,7 @@ function App() {
                       onClick={() => updateValve(v.id, pos)}
                     >
                       <img src={`https://picsum.photos/id/${pos === 1 ? '10' : '20'}/100/100`} alt={`Pos ${pos}`} />
-                      <span>{v.isBinary ? (pos === 1 ? "திறந்து (Open)" : "மூடி (Close)") : `நிலை ${pos}`}</span>
+                      <span>{v.isBinary ? (pos === 1 ? "திறந்து (Open)" : "மூடி (Close)") : `${pos===1 ? "திறந்து (Open)" : "மூடி (Close)" }`}</span>
                     </div>
                   ))}
                 </div>
