@@ -4,14 +4,10 @@ import axios from 'axios';
 const API_BASE_URL = "http://localhost:8080/api/water";
 
 const WaterService = {
-    // GET current system status from MySQL
-    getStatus: () => axios.get(`${API_BASE_URL}/status`),
 
-        // POST toggle motor state (Enforces "One Motor Only" logic in backend)
+    getStatus: () => axios.get(`${API_BASE_URL}/status`),
     toggleMotor: (name, isOn) => 
         axios.post(`${API_BASE_URL}/motor/${name}?isOn=${isOn}`),
-
-    // POST update valve position to divert flow
     updateValve: (name, position) => 
         axios.post(`${API_BASE_URL}/valve/${name}?position=${position}`)
 };
