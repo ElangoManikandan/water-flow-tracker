@@ -62,7 +62,7 @@ function App() {
     <div className="dashboard-wrapper">
       <header className="main-header">
         <div className="brand">
-          <Droplets className="brand-icon" size={32} />
+          <Droplets className="brand-icon" size={80} />
           <h1>புங்கம்பாடி (மேல்) ஊராட்சி - தண்ணீர் கண்காணிப்பு</h1>
         </div>
       </header>
