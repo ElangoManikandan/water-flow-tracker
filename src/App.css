@@ -237,3 +237,11 @@ body {
   .valve-option { padding: 8px; }
   .toggle-btn { min-width: 120px; padding: 10px 16px; }
 }
+
+.tap-hint{
+  display: flex;
+      text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
