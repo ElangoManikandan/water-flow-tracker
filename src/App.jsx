@@ -36,7 +36,7 @@ function App() {
             ariyurValve, thadakovilValve, ganeshValve, kalumettupattiValve } = status;
 
     if (navamaniMotor) {
-      flows.push(`நவமணி → ${ariyurValve === 1 ? "அரியூர் தொட்டி" : "நவமணி நகர் தொட்டி"}`);
+      flows.push(`நவமணி → ${ariyurValve === 1 ? "ஆரியூர் தொட்டி" : "நவமணி நகர் தொட்டி"}`);
     }
     if (thadakovilMotor) {
       flows.push(`தடாகோவில் → ${thadakovilValve === 1 ? "தடாகோவில் தொட்டி (சிறிய)" : "தடாகோவில் தொட்டி (பெரிய)"}`);
@@ -106,7 +106,7 @@ function App() {
           <div className="card-header"><Navigation size={20} /> வால்வு நிலைகள்</div>
           <div className="valve-section-list">
             {[
-              { id: 'ariyurValve', label: 'அரியூர் வழி மாற்றி' },
+              { id: 'ariyurValve', label: 'ஆரியூர் வழி மாற்றி' },
               { id: 'thadakovilValve', label: 'தடாகோவில் மாற்றி' },
               { id: 'ganeshValve', label: 'கணேஷ் நகர் ஜங்ஷன்' },
               { 
