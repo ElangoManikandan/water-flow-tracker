@@ -216,12 +216,12 @@ body {
 @media (min-width: 768px) {
   .dashboard-wrapper { padding: 40px 20px; }
   
-  .main-header { 
-    flex-direction: row; /* Horizontal header for laptop */
-    justify-content: space-between; 
-    align-items: center; 
-    margin-bottom: 40px;
-  }
+  .main-header {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
 
   .brand h1 { font-size: 1.8rem; }
 
