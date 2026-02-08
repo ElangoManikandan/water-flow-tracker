@@ -1,16 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Droplets, Power, Navigation, Activity } from 'lucide-react';
 import './App.css';
-// ஆரியூர் வால்வு
-import ariyur_open from './assets/ganesh-nagar-valve-open.jpeg';
-import ariyur_close from './assets/ganesh-nagar-valve-open.jpeg';
-// // தடாகோவில் வால்வு
+import ariyur_open from './assets/ariyur-open.jpeg';
+import ariyur_close from './assets/ariyur-close.jpeg';
 import thadakovil_open from './assets/ganesh-nagar-valve-open.jpeg';
 import thadakovil_close from './assets/ganesh-nagar-valve-open.jpeg';
-// கணேஷ் நகர் வால்வு
 import ganesh_open from './assets/ganesh-nagar-valve-open.jpeg';
 import ganesh_close from './assets/ganesh-nagar-valve-close.jpeg';
-// கலுமெட்டுப்பட்டி வால்வு
 import kalu_open from './assets/ganesh-nagar-valve-open.jpeg';
 import kalu_close from './assets/ganesh-nagar-valve-open.jpeg';
 
@@ -41,8 +37,6 @@ function App() {
   const updateValve = (name, position) => {
     setStatus(prev => ({ ...prev, [name]: position }));
   };
-
-  // வால்வு படங்களை மேப் செய்தல்
   const valveImages = {
     ariyurValve: { 1: ariyur_open, 2: ariyur_close },
     thadakovilValve: { 1: thadakovil_open, 2: thadakovil_close },
@@ -109,8 +103,6 @@ function App() {
             ))}
           </div>
         </section>
-
-        {/* வால்வுகள் - 8 படங்கள் முறை */}
         <section className="ui-card">
           <div className="card-header"><Navigation size={20} /> வால்வு நிலைகள்</div>
           <div className="valve-section-list">
@@ -129,7 +121,6 @@ function App() {
                       className={`valve-option ${status[v.id] === pos ? 'selected' : ''}`}
                       onClick={() => updateValve(v.id, pos)}
                     >
-                      {/* இங்கே 8 தனித்தனி படங்கள் நிலைக்கேற்ப மாறும் */}
                       <img 
                         src={valveImages[v.id][pos]} 
                         alt={`${v.label} நிலை ${pos}`} 
@@ -144,7 +135,6 @@ function App() {
           </div>
         </section>
 
-        {/* நீர் ஓட்டம் */}
         <div className="status-card">
           <div className="status-header">
             <Activity className={isFlowing ? 'pulse' : ''} />
