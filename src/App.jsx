@@ -83,8 +83,8 @@ function App() {
 
       <main className="controls-container">
         {/* மோட்டார்கள் */}
-        <section className="ui-card">
-          <div className="card-header"><Power size={20} /> மோட்டார்கள்</div>
+        <section className="ui-card" id='card1' >
+          <div className="card-header "><Power size={20} /> மோட்டார்கள்</div>
           <div className="item-list">
             {[
               { id: 'navamaniMotor', label: 'நவமணி நகர்' },
