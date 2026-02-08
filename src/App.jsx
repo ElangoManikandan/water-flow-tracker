@@ -103,7 +103,7 @@ function App() {
             ))}
           </div>
         </section>
-        <section className="ui-card">
+        <section className="ui-card" id='card2' >
           <div className="card-header"><Navigation size={20} /> வால்வு நிலைகள்</div>
           <div className="valve-section-list">
             {[
@@ -135,7 +135,7 @@ function App() {
           </div>
         </section>
 
-        <div className="status-card">
+        <div className="status-card"id='card3' >
           <div className="status-header">
             <Activity className={isFlowing ? 'pulse' : ''} />
             <strong>தற்போதைய நீர் ஓட்டம்</strong>
