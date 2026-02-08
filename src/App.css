@@ -231,11 +231,12 @@ body {
   .status-display { width: auto; min-width: 400px; }
      .controls-container{
       display: grid;
-      grid-template-columns: 1fr ;
+      grid-template-columns: 1fr;
       max-width: none;
      }
      #card1{
       width:fit-content;
+      justify-self: center;
      }
      .valve-section-list{
       display: grid;
