@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Droplets, Power, Navigation, Activity } from 'lucide-react';
 import './App.css';
+import logo from './assets/logo.png';
 import ariyur_open from './assets/ariyur-open.jpeg';
 import ariyur_close from './assets/ariyur-close.jpeg';
 import thadakovil_open from './assets/ganesh-nagar-valve-open.jpeg';
@@ -76,7 +77,7 @@ function App() {
     <div className="dashboard-wrapper">
       <header className="main-header">
         <div className="brand">
-          <Droplets className="brand-icon" size={100} />
+          <img src={logo} id="logo" />
           <h2>புங்கம்பாடி ஊராட்சி - தண்ணீர் கண்காணிப்பு</h2>
         </div>
       </header>
