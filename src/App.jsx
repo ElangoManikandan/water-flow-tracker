@@ -7,8 +7,8 @@ import thadakovil_open from './assets/ganesh-nagar-valve-open.jpeg';
 import thadakovil_close from './assets/ganesh-nagar-valve-open.jpeg';
 import ganesh_open from './assets/ganesh-nagar-valve-open.jpeg';
 import ganesh_close from './assets/ganesh-nagar-valve-close.jpeg';
-import kalu_open from './assets/ganesh-nagar-valve-open.jpeg';
-import kalu_close from './assets/ganesh-nagar-valve-open.jpeg';
+import kalu_open from './assets/kalu-open.jpeg';
+import kalu_close from './assets/kalu-close.jpeg';
 
 function App() {
   const initialState = {
